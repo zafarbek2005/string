@@ -1,0 +1,85 @@
+JavaScript String Funksiyalari
+
+JavaScript ni satr lar mavzusida siz bilan matn uzunligi haqida ko'rib chiqgan edik uni takrorlab shu kabi string funksiyalarni ko'rib chiqamiz.
+
+JavaScript da string uzunligi
+Xususiyat lengthsatr uzunligini qaytaradi:
+
+let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = txt.length;
+console.log(length);
+26
+String ni qism kesimida chaqirish.
+Satrning bir qismini ajratib olishning 3 ta usuli mavjud:
+
+slice(start, end)
+substring(start, end)
+substr(start, length)
+JavaScript da String slice()
+slice()satrning bir qismini chiqaradi va chiqarilgan qismini yangi qatorga qaytaradi. U ikki parametr qabul qiladi boshlang'ich nuqtasi va oxirgi nuqtasi.
+
+let str = "Uzbek, Devs, Sherkulov";
+let part = str.slice(7, 11);
+Devs
+JavaScript indekslarni noldan boshlab sanaydi. Birinchi indeks 0. Ikkinchi indeks - 1.
+Agar parametr manfiy bo'lsa, pozitsiya satr oxiridan boshlab hisoblanadi.
+
+let str = "Uzbek, Devs, Sherkulov";
+let part = str.slice(-15,-11);
+Devs
+JavaScript da String substring()
+substring() funksiya slice() bilan o'xshash. Birgina farqi teskari indeks qabul qilmaydi.
+
+let str = "Uzbek, Devs, Sherkulov";
+let part = str.substring(7, 11);
+Agar siz ikkinchi parametrni kiritmasangiz substring() satrning qolgan qismini kesib tashlaydi.
+
+JavaScript da String substr()
+substr() funksiya slice() bilan o'xshash. Farqi shundaki birinchi parametr kesib olinadigan matn ni boshlang'ich indeksi ikkinchi paremetrga boshlang'ich indeksdan satr kengligini kesib oladi.
+
+let str = "Uzbek, Devs, Sherkulov";
+let part = str.substr(7, 4);
+Devs
+String qismini almashtirish
+Ushbu usulreplace() funksiyasi belgilangan qiymatni satrdagi boshqa tekst bilan almashtiradi:
+
+let text = "uzbekdevs.uz sayti MasterSherkulov tamonidan yaratildi.";
+let newText = text.replace("MasterSherkulov", "UzbekDevs");
+uzbekdevs.uz sayti UzbekDevs tamonidan yaratildi.
+JavaScript da string toUpperCase()
+toUpperCase() funksiyasi belgilangan satrni kichik harflarga o'tkazadi.
+
+let text1 = "Uzbek Devs";
+let text2 = text1.toUpperCase();
+UZBEK DEVS
+JavaScript da string toLowerCase()
+toLowerCase() funksiyasi belgilangan satrni katta harflarga o'tkazadi.
+
+let text1 = "Uzbek Devs";
+let text2 = text1.toLowerCase();
+uzbek devs
+JavaScript da String concat()
+concat()ikki yoki undan ortiq qatorlarni birlashtiradi:
+
+let text1 = "Uzbek";
+let text2 = "Devs";
+let text3 = text1.concat(" ", text2);
+Uzbek Devs
+JavaScript da String trim()
+Ushbu funksiya trim()satrning ikkala tomonidagi bo'shliqni olib tashlaydi:
+
+let text1 = "     Uzbek Devs     ";
+let text2 = text1.trim();
+Uzbek Devs
+JavaScript da String charAt()
+Ushbu funksiya charAt() belgini satrdagi belgilangan indeks (pozitsiya) ga qaytaradi:
+
+let text = "Uzbek Devs";
+let char = text.charAt(0);
+U
+JavaScript da String charCodeAt()
+Ushbu funksiya charCodeAt()satrdagi belgilangan indeksdagi belgining unikodini qaytaradi: Usul UTF-16 kodini qaytaradi (0 dan 65535 gacha bo'lgan butun son).
+
+let text = "Uzbek Devs";
+let char = text.charCodeAt(0);
+buning natijasi char elementni qiymati 85 ga teng bo'ladi.
