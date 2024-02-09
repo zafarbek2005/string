@@ -133,6 +133,102 @@
 
 // N12
 
-let son = "49859 5959595 99599494994949494994";
-let reversedSon = son.split('').reverse().join('');
-console.log(reversedSon);
+// let son = "49859 5959595 9959949499494949499";
+// let reversedSon = son.split('').reverse().join('');
+// console.log(reversedSon);
+
+// N 13
+
+// console.log(eval(7+3-2));
+
+// N 15
+
+// count = 0
+// let string = "ehbchebchebwdhcbhcbhecbnhecbhedbchebdnshxbbxgyvsfvsfxcvfsxcfsfscvxfcxfecfvcvvccvcvvc"
+// for (const i of string) {
+//    if(i === "c"){
+//      count++;
+//    }
+// }
+// console.log(count);
+
+// N 17 
+
+// let count = 0;
+// let str = "fefhuehwbhbhebdhebdhbe";
+// let str1 = "eubcgygbrgcgcgyycvgyevcgyvecgvgy";
+// if (str.includes("str1")) {
+//     count++;
+// }
+// if (str1.includes("str")) {
+//     count++;
+// }
+// console.log(count);
+
+// N 23
+
+
+// let s = 0;
+// let word = "";
+// let str = "CNDNCDNCHJNDCHJNC JENCJNAA VJRAAAANVJRAANVJC CJMCRAAAACJNRJCAANRJCNJNJNRJCNJREMCKCM "
+// for (let i in str) {
+//     if(str[i] !== " "){
+//         word += str[i];
+//     }
+//     else{
+//         if(word.includes("AA")){
+//             s = s + 1;
+//         }
+//         word = ""
+//     }    
+// }
+// console.log(s);
+
+
+// N 27
+
+// let s = 0;
+// let word = "";
+// let str = "CNDNCDNCHJNDCHJNC JENCJNAA VJRAAAANVJRAANVJC CJMCRAAAACJNRJCAANRJCNJNJNRJCNJREMCKCM "
+// for (let i in str) {
+//     if(str[i] !== " "){
+//         word += str[i];
+//     }
+//     else{
+//         if(word.length){
+//             s = s + 1;
+//         }
+//         word = ""
+//     } 
+// }
+// console.log(word);
+
+
+// N 28
+
+// function getfilname(path){
+//     frist_index =path.lastindexof('/')
+//     last_index =path.lastindexof('.')
+//     return path.slice(frist_index +1,last_index)
+
+// }
+// console.log(getfilname('D:/Qudrat_c++/books/My_book.exe'));
+// N 29
+
+// function getfilname(path){
+   
+//     last_index =path.lastindexof('.')
+//     return path.slice(last_index +1)
+
+// }
+// console.log(getfilname('D:/Qudrat_c++/books/My_book.exe'));
+
+// N 30
+
+// function getfilname(path){
+//     frist_index =path.lastindexof('_')
+//     last_index =path.lastindexof('.')
+//     return path.slice(frist_index +4,last_index)
+
+// }
+// console.log(getfilname('D:/Qudrat_c++/books/My_book.exe'));
