@@ -131,6 +131,20 @@
 // let yangiString = kattaLotinKichigigaAlmash(string);
 // console.log("Natija:", yangiString);
 
+// N11
+
+// function getstr(son) {
+//     if (Number.isInteger(son)) {
+//         return 1
+//     }
+//     if (!isNaN(son) && Number.isInteger(Number(son))) {
+//         return 0
+//     }
+//     return 2
+// }
+
+// console.log(getstr(45.255));  
+
 // N12
 
 // let son = "49859 5959595 9959949499494949499";
@@ -151,6 +165,28 @@
 //    }
 // }
 // console.log(count);
+
+// N 16
+
+// function getstr(S1, S2, C) {
+//     let result = "";
+//     for (let i = 0; i < S1.length; i++) {
+//         if (S1[i] === C) {
+//             result += S2;
+//         }
+//         result += S1[i];
+//     }
+//     return result;
+// }
+
+// let str_value = "fuefuehfuheufhueucnnucnunwuwdcubcbuwnaxmjnwjnxuiwqnduwnduwamjkcxsjkcnjkcn";
+// let s2_value = "bcieiubwchiybwficbnuubneuibnce";
+// let C = "c";
+
+// let result = getstr(str_value, s2_value, C);
+// console.log("Natija:", result);
+
+
 
 // N 17 
 
@@ -184,8 +220,7 @@
 // }
 // console.log(s);
 
-
-// N 27
+// N 25
 
 // let s = 0;
 // let word = "";
@@ -195,13 +230,45 @@
 //         word += str[i];
 //     }
 //     else{
-//         if(word.length){
-//             s = s + 1;
-//         }
-//         word = ""
-//     } 
+//         word=str.splite("").join(".")  
+//     }    
 // }
 // console.log(word);
+
+// let s = 0;
+// let word = "";
+// let str = "CNDNCDNCHJNDCHJNC JENCJNAA VJRAAAANVJRAANVJC CJMCRAAAACJNRJCAANRJCNJNJNRJCNJREMCKCM ";
+// for (let i in str) {
+//     if(str[i] !== " "){
+//         word += str[i];
+//     }
+//     else{
+//         word += ".";
+//     }    
+// }
+// console.log(word);
+
+
+// N 27
+
+// let s = 0;
+// let word = "";
+// let str = ",.;'?; ";
+// for (let i in str) {
+//     if (str[i] !== " ") {
+//         word += str[i];
+//     } else {
+//         if (word.length) {
+//             s = s + 1;
+//         }
+//         word = "";
+//     }
+// }
+// if (word.length) {
+//     s = s + 1;
+// }
+// console.log(s);
+
 
 
 // N 28
